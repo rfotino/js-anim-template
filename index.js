@@ -13,7 +13,7 @@ var exampleObject = {
 // TODO: add image names and file paths to imagesToPreload, to be accessed
 // later in the images object. Don't modify the images object manually.
 var imagesToPreload = {
-  spaceship: 'spaceship.png'
+  spaceship: 'assets/spaceship.png'
 };
 var images = {};
 
