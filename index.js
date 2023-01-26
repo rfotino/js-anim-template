@@ -85,9 +85,9 @@ function updateDrawLoop() {
   function mouseEventHandler(event) {
     mouseState.x = event.clientX;
     mouseState.y = event.clientY;
-    mouseState.left = (event.buttons & 0x1) == 1;
-    mouseState.right = (event.buttons & 0x2) == 1;
-    mouseState.middle = (event.buttons & 0x4) == 1;
+    mouseState.left = (event.buttons & 0x1) === 0x1;
+    mouseState.right = (event.buttons & 0x2) === 0x2;
+    mouseState.middle = (event.buttons & 0x4) === 0x4;
   }
   canvas.addEventListener('mouseenter', mouseEventHandler);
   canvas.addEventListener('mouseleave', mouseEventHandler);
